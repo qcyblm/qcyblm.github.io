@@ -14,8 +14,8 @@
 - 有学习 JavaScript、Vue 等前端框架的想法。
 - 寻找自己适合有发展的工作当中去。
 - 静态网站生成器重度用户。
-- 每日必上 Giee 和 GitHub。
-- 每日必用 Visual Studio Code。
+- 每日必上 [Giee](https://gitee.com/qcyblm) 和 [GitHub](https://github.com/qcyblm)。
+- 每日必用 [Visual Studio Code](https://code.visualstudio.com/)。
 
 ## 特长应用
 
@@ -23,29 +23,30 @@
   - Corel DRAW、Adobe Photoshop
 - 前端编辑器
   - Adobe Dreamweaver
-  - Visual Studio Code
+  - [Visual Studio Code](https://code.visualstudio.com/)
 
 ## 喜好
 
 - 软件
   - 操作系统内核：Windows NT
   - Windows 操作系统主要版本：Windows 7、Windows 10
-  - Web浏览器：Firefox、Google Chrome
-  - 设计编辑器：CorelDRAW、Adobe Photoshop、Visual Studio Code
-  - 压缩软件：7-Zip
-  - 截图工具：Snipaste
-  - 媒体播放：爱奇艺万能播放器
-  - 网盘传输：百度网盘、天翼云、OneDrive
-  - 社交聊天：微信、TIM
+  - Web浏览器：[Mozilla Firefox](https://www.firefox.com.cn/)、[Cent Browser](https://www.centbrowser.cn/)
+  - 设计编辑器：CorelDRAW、Adobe Photoshop、[Visual Studio Code](https://code.visualstudio.com/)
+  - 压缩软件：[7-Zip](https://sparanoid.com/lab/7z/)
+  - 截图工具：[Snipaste](https://zh.snipaste.com/)
+  - 看图工具：[Imagine](http://www.nyam.pe.kr/dev/imagine/)
+  - 媒体播放：[MPC-BE](https://sourceforge.net/projects/mpcbe/)
+  - 网盘传输：[百度网盘](https://pan.baidu.com/)、[天翼云](https://cloud.189.cn/)
+  - 社交聊天：[微信](https://pc.weixin.qq.com/)、[TIM](https://office.qq.com/)
 
 ## 电子设备
 作为技术爱好者，我每天的大部分时间都被台式电脑所占据。以下是我使用的电脑设备
 
 ### 组装台式机
 - 主要配置
-  - 处理器：英特尔 第四代酷睿 i5-4670T @ 2.30GHz 四核
-  - 主板：昂达 H81M全固版(Ver:5.0）
-  - 内存：16 GB ( 三星 DDR3 1600MHz / 金士顿 DDR3 1600MHz )
+  - 处理器：英特尔 Core i3-10100 @ 3.60GHz
+  - 主板：技嘉 H410M H
+  - 内存：8 GB（镁光 DDR4 2400MHz）
   - 主硬盘：GLOWAY STK240GS3-S7 ( 240 GB / 固态硬盘 )
   - 显卡：核心显卡
   - 显示器：SOY0215 H225 MONITOR ( 21.5 英寸 )
