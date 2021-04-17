@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - master
+env:
+  TZ: Asia/Shanghai
 jobs:
   build-and-deploy:
     runs-on: ubuntu-20.04
@@ -25,7 +27,6 @@ jobs:
           NAME: ${{ secrets.ACCESS_NAME }}
           EMAIL: ${{ secrets.ACCESS_EMAIL }}
           ORIGIN: ${{ secrets.ACCESS_ORIGIN }}
-          TZ: Asia/Shanghai
         run: |
           cd src/.vuepress/dist
           git init
