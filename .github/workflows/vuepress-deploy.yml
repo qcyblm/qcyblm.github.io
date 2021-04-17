@@ -18,15 +18,16 @@ jobs:
         uses: actions/setup-node@v2.1.4
         with:
           node-version: 15.x
-      - name: build and deploy
+      - name: Install packages
+        run: yarn
+      - name: Build
+        run: yarn build
+      - name: Deploy
         env:
           NAME: ${{ secrets.ACCESS_NAME }}
           EMAIL: ${{ secrets.ACCESS_EMAIL }}
           ORIGIN: ${{ secrets.ACCESS_ORIGIN }}
         run: |
-          yarn config set registry https://r.npm.taobao.org
-          yarn
-          yarn build
           cd src/.vuepress/dist
           git init
           git config user.name "$NAME"
