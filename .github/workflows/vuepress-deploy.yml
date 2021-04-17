@@ -30,6 +30,8 @@ jobs:
         run: |
           cd src/.vuepress/dist
           git init
+          git config branch.master.remote origin
+          git config branch.master.merge refs/heads/master
           git config user.name "$NAME"
           git config user.email "$EMAIL"
           git add -A
