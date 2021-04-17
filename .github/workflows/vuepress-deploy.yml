@@ -29,9 +29,8 @@ jobs:
           ORIGIN: ${{ secrets.ACCESS_ORIGIN }}
         run: |
           cd src/.vuepress/dist
+          git config --global init.defaultBranch master
           git init
-          git config branch.master.remote origin
-          git config branch.master.merge refs/heads/master
           git config user.name "$NAME"
           git config user.email "$EMAIL"
           git add -A
