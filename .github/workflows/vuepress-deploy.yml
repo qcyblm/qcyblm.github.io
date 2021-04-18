@@ -30,4 +30,4 @@ jobs:
           folder: src/.vuepress/dist
           git-config-name: ${{ secrets.ACCESS_NAME }}
           git-config-email: ${{ secrets.ACCESS_EMAIL }}
-          commit-message: " Deploy Production Code for Commit ${{ github.sha }} in $(date +'%Y-%m-%d %H:%M') "
+          commit-message: "Deploy Production Code for Commit ${{ github.sha }}"
