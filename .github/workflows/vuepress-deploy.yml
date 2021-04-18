@@ -33,6 +33,7 @@ jobs:
           git init
           git config user.name "$NAME"
           git config user.email "$EMAIL"
+          git remote add origin https://${NAME}:${ACCESS_TOKEN}@github.com/${NAME}/${NAME}.github.io.git
           git add -A
-          git commit -q -m "Deploy Production Code for Commit ${{ github.sha }} in $(date +"%Y-%m-%d %H:%M") 🚀"
-          git push -f https://${NAME}:${ACCESS_TOKEN}@github.com/${NAME}/${NAME}.github.io.git master:gh-pages
+          git commit -m "Deploy Production Code for Commit ${{ github.sha }} in $(date +"%Y-%m-%d %H:%M") 🚀"
+          git push master:gh-pages
