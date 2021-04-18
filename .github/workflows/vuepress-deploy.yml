@@ -26,7 +26,7 @@ jobs:
         env:
           NAME: ${{ secrets.ACCESS_NAME }}
           EMAIL: ${{ secrets.ACCESS_EMAIL }}
-          ORIGIN: ${{ secrets.ACCESS_ORIGIN }}
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         run: |
           cd src/.vuepress/dist
           git config --global init.defaultBranch master
@@ -35,4 +35,4 @@ jobs:
           git config user.email "$EMAIL"
           git add -A
           git commit -q -m "Deploy Production Code for Commit ${{ github.sha }} in $(date +"%Y-%m-%d %H:%M") 🚀"
-          git push -f "$ORIGIN" master:gh-pages
+          git push -f https://${NAME}:${ACCESS_TOKEN}@github.com/${NAME}/${NAME}.github.io.git master:gh-pages
