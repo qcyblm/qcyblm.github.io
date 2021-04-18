@@ -9,7 +9,7 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout 🛎️
         uses: actions/checkout@v2.3.4
         with:
           persist-credentials: false
@@ -18,23 +18,16 @@ jobs:
         uses: actions/setup-node@v2.1.5
         with:
           node-version: 15.x
-      - name: Install packages
-        run: yarn
-      - name: Build
-        run: yarn build
-      - name: Deploy
-        env:
-          NAME: ${{ secrets.ACCESS_NAME }}
-          EMAIL: ${{ secrets.ACCESS_EMAIL }}
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+      - name: Install and Build 🔧
         run: |
-          cd src/.vuepress/dist
-          git config --global init.defaultBranch master
-          git init
-          git config user.name "$NAME"
-          git config user.email "$EMAIL"
-          git remote add origin https://github.com/${NAME}/${NAME}.github.io.git
-          git fetch origin gh-pages
-          git add .
-          git commit -m "Deploy Production Code for Commit ${{ github.sha }} in $(date +"%Y-%m-%d %H:%M") 🚀"
-          git push https://${NAME}:${ACCESS_TOKEN}@github.com/${NAME}/${NAME}.github.io.git master:gh-pages
+          yarn
+          yarn build
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
+          branch: gh-pages
+          folder: src/.vuepress/dist
+          git-config-name: ${{ secrets.ACCESS_NAME }}
+          git-config-email: ${{ secrets.ACCESS_EMAIL }}
+          commit-message: Deploy Production Code for Commit ${{ github.sha }} in $(date +"%Y-%m-%d %H:%M")
