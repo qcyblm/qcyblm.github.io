@@ -1,0 +1,55 @@
+title = "青春永不落幕"
+description = "使用合适的软件和代码来达到最佳效果"
+temp = ".temp"
+cache = ".cache"
+theme = "@qcyblm/vuepress-theme-vpx"
+[locales."/"]
+  lang = "zh-CN"
+[head]
+  meta = [
+    { name = "baidu-site-verification", content = "code-jNjoWXWohM" },
+    { name = "keywords", content = "青春永不落幕,技术文档,软件收集" },
+  ] 
+  link = [
+    { rel = "icon", href = "./favicon.ico", type = "image/x-icon"},
+    { rel = "shortcut icon", href = "./favicon.ico", type = "image/x-icon"}
+  ]
+[themeConfig]
+  logo = '/assets/img/logo.webp'
+  edit = { docsDir = 'src' }
+  editLinks = true
+  editLinkText = '编辑当前页'
+  lastUpdated = '最后更新时间'
+  repo = { platform = 'https://github.com/', icon = 'fab fa-github', owner = 'qcyblm', repositories = 'qcyblm.github.io' }
+  nav = [
+    { text = '主页', link = '/', icon = 'fa fa-home' },
+    { text = '关于', link = '/about', icon = 'fa fa-user'},
+    { text = '项目', link = '/project', icon = 'fa fa-th-large'},
+    { text = 'Windows', icon = 'fab fa-windows', items = [
+      { text = 'Windows常用软件下载官网', link = '/windows/software' },
+      { text = 'Windows PE 工具', link = '/windows/wepe' }
+     ] },
+    { text = '文档', link = '/book/', icon = 'fa fa-book'},
+    { text = '导航', link = '/nav', icon = 'fa fa-bookmark'},
+    { text = '支持', link = '/support', icon = 'fa fa-bell'}
+  ]
+  footer = { createYear = '2020', author = 'qcyblm', authorLink = 'https://qcyblm.gitee.io/', licensedLink = 'https://github.com/qcyblm/qcyblm.github.io/blob/master/LICENSE', licensed = 'MIT'} 
+[themeConfig.sidebar]
+  "/windows/" = [
+    '/windows/software',
+    '/windows/wepe',
+  ]
+[markdown]
+  lineNumbers = true
+[plugins.'@vuepress/plugin-last-updated'.dateOptions]
+  hour12 = false
+  timeZone = 'Asia/Shanghai'
+  year = "numeric"
+  month = "2-digit"
+  day = "2-digit"
+  weekday = "long"
+  hour = "2-digit"
+  minute = "2-digit"
+  second = "numeric"
+[plugins]
+  'vuepress-plugin-code-copy' = { align = 'bottom', color = 'rgba(255,255,255,0.4)', backgroundTransition = 'bottom', backgroundColor = '#0075b8', successText = '复制成功', staticIcon = false }
