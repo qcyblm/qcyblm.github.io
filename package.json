@@ -17,9 +17,9 @@
   "homepage": "https://github.com/qcyblm/qcyblm.github.io#readme",
   "devDependencies": {
     "@qcyblm/vuepress-theme-vpx": "^1.0.7",
-    "vuepress": "^1.8.0"
+    "vuepress": "^1.8.2"
   },
   "dependencies": {
-    "moment": "^2.29.1"
+    "vuepress-plugin-code-copy": "^1.0.6"
   }
 }
