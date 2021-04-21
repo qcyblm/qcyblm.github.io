@@ -21,6 +21,7 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
       - name: Install and Build 🔧
         run: |
+          yarn config set registry https://npm.pkg.github.com
           yarn
           yarn build
       - name: Deploy 🚀
