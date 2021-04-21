@@ -22,6 +22,7 @@ jobs:
           check-latest: true
       - name: Install and Build 🔧
         run: |
+          yarn config set ignore-engines true
           yarn
           yarn build
       - name: Deploy 🚀
