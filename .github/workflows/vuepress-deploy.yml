@@ -17,8 +17,7 @@ jobs:
       - name: Setup Node.js environment ⚙️
         uses: actions/setup-node@v2.1.5
         with:
-          architecture: x64
-          check-latest: true
+          node-version: '14'
       - name: Install and Build 🔧
         run: |
           yarn
