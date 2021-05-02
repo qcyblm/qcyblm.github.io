@@ -22,12 +22,22 @@ jobs:
         run: |
           yarn
           yarn build
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@4.1.1
-        with:
-          token: ${{ secrets.ACCESS_TOKEN }}
-          branch: gh-pages
-          folder: src/.vuepress/dist
-          git-config-name: ${{ secrets.ACCESS_NAME }}
-          git-config-email: ${{ secrets.ACCESS_EMAIL }}
-          commit-message: "Deploy Production Code for Commit ${{ github.sha }}"
+          cd src/.vuepress/dist
+          git init
+          git config user.name ${{ secrets.ACCESS_NAME }}
+          git config user.email ${{ secrets.ACCESS_EMAIL }}
+          git config user.password ${{ secrets.ACCESS_TOKEN }}
+          git remote add origin "https://github.com/qcyblm/qcyblm.github.io.git"
+          git add -A
+          git commit -q -m "Auto Deploy from GitHub Actions: $(date +"%Y-%m-%d %H:%M")"
+          git push -f origin master:gh-pages
+
+#       - name: Deploy 🚀
+#         uses: JamesIves/github-pages-deploy-action@4.1.1
+#         with:
+#           token: ${{ secrets.ACCESS_TOKEN }}
+#           branch: gh-pages
+#           folder: src/.vuepress/dist
+#           git-config-name: ${{ secrets.ACCESS_NAME }}
+#           git-config-email: ${{ secrets.ACCESS_EMAIL }}
+#           commit-message: "Deploy Production Code for Commit ${{ github.sha }}"
