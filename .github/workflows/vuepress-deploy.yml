@@ -24,10 +24,10 @@ jobs:
           yarn build
           cd src/.vuepress/dist
           git init
+          git config --global init.defaultBranch master
           git config user.name ${{ secrets.ACCESS_NAME }}
           git config user.email ${{ secrets.ACCESS_EMAIL }}
-          git config --global user.password ${{ secrets.ACCESS_TOKEN }}
-          git remote add origin "https://github.com/qcyblm/qcyblm.github.io.git"
+          git remote add origin "https://${{ secrets.ACCESS_NAME }}:${{ secrets.ACCESS_TOKEN }}@github.com/qcyblm/qcyblm.github.io.git"
           git add -A
           git commit -q -m "Auto Deploy from GitHub Actions: $(date +"%Y-%m-%d %H:%M")"
           git push -f origin master:gh-pages
