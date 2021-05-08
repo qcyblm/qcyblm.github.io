@@ -14,7 +14,7 @@ theme = "@qcyblm/vuepress-theme-vpx"
     { name = 'apple-mobile-web-app-status-bar-style', content = 'black' },
     { name = 'msapplication-TileImage', content = '/icons/msapplication-icon-144x144.png' },
     { name = 'msapplication-TileColor', content = '#000000' }
-  ] 
+  ]
   link = [
     { rel = "icon", href = "/favicon.ico", type = "image/x-icon"},
     { rel = "shortcut icon", href = "/favicon.ico", type = "image/x-icon"},
@@ -42,7 +42,7 @@ theme = "@qcyblm/vuepress-theme-vpx"
     { text = '支持', link = '/support', icon = 'fa fa-bell'},
     { text = '友链', link = '/friendlinks', icon = 'fa fa-link'},
   ]
-  footer = { createYear = '2020', author = 'qcyblm', authorLink = 'https://qcyblm.gitee.io/', licensedLink = 'https://github.com/qcyblm/qcyblm.github.io/blob/master/LICENSE', licensed = 'MIT'} 
+  footer = { createYear = '2020', author = 'qcyblm', authorLink = 'https://qcyblm.gitee.io/', licensedLink = 'https://github.com/qcyblm/qcyblm.github.io/blob/master/LICENSE', licensed = 'MIT'}
 [themeConfig.sidebar]
   "/windows/" = [
     '/windows/software',
@@ -54,3 +54,4 @@ theme = "@qcyblm/vuepress-theme-vpx"
   '@vuepress/plugin-last-updated' = { dateOptions = { hour12 = false, timeZone = 'Asia/Shanghai', year = "numeric", month = "2-digit", day = "2-digit", hour = "2-digit", minute = "2-digit" } }
   'vuepress-plugin-code-copy' = { align = 'bottom', color = 'rgba(255,255,255,0.4)', backgroundTransition = 'bottom', backgroundColor = '#0075b8', successText = '复制成功', staticIcon = false }
   "@vuepress/plugin-pwa" = { serviceWorker = 'true' , updatePopup = { buttonText = '发现新内容可用', message = '刷新' } }
+	'sitemap' = { hostname = 'https://qcyblm.github.io/' }
