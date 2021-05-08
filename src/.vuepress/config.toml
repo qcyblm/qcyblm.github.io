@@ -7,7 +7,7 @@ theme = "@qcyblm/vuepress-theme-vpx"
   lang = "zh-CN"
 [head]
   meta = [
-    { name = "baidu-site-verification", content = "code-jNjoWXWohM" },
+    { name = "baidu-site-verification", content = "code-P8hnhMqozA" },
     { name = "keywords", content = "青春永不落幕,技术文档,软件收集" },
     { name = 'theme-color', content = '#0058CF' },
     { name = 'apple-mobile-web-app-capable', content = 'yes' },
@@ -20,7 +20,7 @@ theme = "@qcyblm/vuepress-theme-vpx"
     { rel = "shortcut icon", href = "/favicon.ico", type = "image/x-icon"},
     { rel = 'manifest', href = '/manifest.json' },
     { rel = 'apple-touch-icon', href = '/icons/apple-touch-icon-152x152.png' },
-    { rel = 'mask-icon', href = '/icons/safari-pinned-tab.svg', color = '#0058CF' },
+    { rel = 'mask-icon', href = '/icons/safari-pinned-tab.svg', color = '#0058CF' }
   ]
 [themeConfig]
   logo = '/assets/img/logo.webp'
