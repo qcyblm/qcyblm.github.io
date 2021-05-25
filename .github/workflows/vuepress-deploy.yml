@@ -19,9 +19,7 @@ jobs:
         with:
           node-version: "14.16.1"
       - name: Install and Build 🔧
-        run: |
-          yarn
-          yarn build
+        run: yarn
       - name: Deploy 🚀
         run: |
           cd src/.vuepress/dist
