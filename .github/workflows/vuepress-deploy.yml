@@ -17,7 +17,7 @@ jobs:
       - name: Setup Node.js environment ⚙️
         uses: actions/setup-node@v2.1.5
         with:
-          node-version: "LTS"
+          node-version: "14.17.0"
       - name: Install and Build 🔧
         run: yarn
       - name: Deploy 🚀
