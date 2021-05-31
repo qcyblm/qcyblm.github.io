@@ -11,7 +11,7 @@ jobs:
         uses: GuillaumeFalourd/clone-github-repo-action@v1
         with:
            owner: qcyblm
-           repository: https://github.com/qcyblm/qcyblm.github.io.git
+           repository: qcyblm.github.io
            access-token: ${{ secrets.ACCESS_TOKEN }}
         env:
           TZ: Asia/Shanghai
