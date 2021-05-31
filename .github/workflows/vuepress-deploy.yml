@@ -21,13 +21,10 @@ jobs:
       - name: Install and Build 🔧
         run: yarn
       - name: Deploy 🚀
-        run: |
-          cd src/.vuepress/dist
-          git config --global init.defaultBranch master
-          git init
-          git config user.name ${{ secrets.ACCESS_NAME }}
-          git config user.email ${{ secrets.ACCESS_EMAIL }}
-          git remote add origin "https://${{ secrets.ACCESS_NAME }}:${{ secrets.ACCESS_TOKEN }}@github.com/qcyblm/qcyblm.github.io.git"
-          git add -A
-          git commit -q -m "Auto Deploy from GitHub Actions: $(date +"%Y-%m-%d %H:%M")"
-          git push -f origin master:gh-pages
+        uses: JamesIves/github-pages-deploy-action@4.1.3
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
+          branch: gh-pages
+          git-config-name: qcyblm
+          git-config-email: ${{ secrets.ACCESS_EMAIL }}
+          folder: src/.vuepress/dist
