@@ -9,7 +9,7 @@
 	"scripts": {
 		"dev": "vuepress dev src --no-cache",
 		"build": "vuepress build src --no-cache",
-		"prepare": "husky install && yarn build"
+		"prepare": "husky install"
 	},
 	"husky": {
 		"hooks": {
@@ -28,7 +28,6 @@
 		"commitizen": "^4.2.3",
 		"husky": "^6.0.0",
 		"lint-staged": "^10.5.4",
-		"url-loader": "1.1.2",
 		"vuepress": "^1.8.2"
 	},
 	"dependencies": {
@@ -36,9 +35,12 @@
 		"commander": "^2.0.0",
 		"esm": "^3.0.0",
 		"vuepress-plugin-code-copy": "^1.0.6",
-		"vuepress-plugin-sitemap": "^2.3.1",
-		"webpack": "^4.8.1"
+		"vuepress-plugin-sitemap": "^2.3.1"
 	},
+	"engines": {
+    "node": ">= 10",
+		"yarn": ">= 1.22.10 < 2"
+  },
 	"config": {
 		"commitizen": {
 			"path": "node_modules/cz-conventional-changelog"
