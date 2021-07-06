@@ -1,0 +1,18 @@
+name: CI
+on:
+  push:
+    branches: [ baiduPush ]
+  schedule:
+    - cron: '0 23 * * *'
+  workflow_dispatch:
+    inputs:
+      name:
+        required: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.4
+      - name: Baidu Push
+        run: curl -H 'Content-Type:text/plain' --data-binary @urls.txt "${{ secrets.BAIDU_TOKEN }}"
