@@ -3,7 +3,7 @@ on:
   push:
     branches: [ baiduPush ]
   schedule:
-    - cron: '0 23 * * *'
+    - cron: '0 15 * * *'
   workflow_dispatch:
     inputs:
       name:
