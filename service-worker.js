@@ -27,11 +27,11 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "c4be307d3d14a5c9e354e32828d7d919"
+    "revision": "7e86753683667d37520dd868b54c5d3e"
   },
   {
     "url": "about.html",
-    "revision": "a6920d608e0d552305a5fe0482c9ac3a"
+    "revision": "82ea67a5c0f2dee6a853abe6242b9b8a"
   },
   {
     "url": "assets/css/0.styles.6eb90780.css",
@@ -50,8 +50,8 @@ self.__precacheManifest = [
     "revision": "06271c9e63f1727c8705a40ef7b6f89b"
   },
   {
-    "url": "assets/js/12.369c7f71.js",
-    "revision": "bec2a26bc3803deeaadfe6e0606075dd"
+    "url": "assets/js/12.7aa851b0.js",
+    "revision": "8154b03a4c3ff620608d68189560c8e5"
   },
   {
     "url": "assets/js/13.564ccb61.js",
@@ -106,24 +106,24 @@ self.__precacheManifest = [
     "revision": "2bba5c995579f8084d7aff81a661b878"
   },
   {
-    "url": "assets/js/app.b1f23237.js",
-    "revision": "4007d15b6cc69546519e95c7d3089f10"
+    "url": "assets/js/app.c9030dae.js",
+    "revision": "2826d4d0585ca6d8dc01f06b81f8f22b"
   },
   {
     "url": "book/book1.html",
-    "revision": "07ea6c0fa7102b7b580025d248bee442"
+    "revision": "4b759d65a32fb28cf4486a89a85ed76a"
   },
   {
     "url": "book/book2.html",
-    "revision": "61259a1e181d848602782b9752c11d16"
+    "revision": "409e004f4bc79e06b94bbb7dd9f6b9a6"
   },
   {
     "url": "book/index.html",
-    "revision": "7bdfbbb910c6d8736072e3a226453b2c"
+    "revision": "ba926b7f4ad7d8d0434f9c3f2bf798c0"
   },
   {
     "url": "friendlinks.html",
-    "revision": "2e18a923146f548ac2837fa4d9d5ce9c"
+    "revision": "ac3f213a6df0ea72b25d0eb3ae5d9498"
   },
   {
     "url": "icons/apple-touch-icon-152x152.png",
@@ -139,27 +139,27 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "eb7c6666a8bc68a470ba858beb9acb81"
+    "revision": "17014788fb8251be296afd4d650eaf05"
   },
   {
     "url": "nav.html",
-    "revision": "1c1eee4bc714d4732eb22ef995b8c2d7"
+    "revision": "ebf9a4518a127ade4fedea31ad600106"
   },
   {
     "url": "project.html",
-    "revision": "e75327ac945dab54be49b51b7e9f2c97"
+    "revision": "5287b4eadc952fde302cd8039105768f"
   },
   {
     "url": "support.html",
-    "revision": "939c53eb2500a2a73f1af7dd68589e1f"
+    "revision": "ae25e9ef34829ee90fe39010cd9a1575"
   },
   {
     "url": "windows/software.html",
-    "revision": "22866f1bb492b10b854133d0b5f478b7"
+    "revision": "996beb2990e5832eb7494306072f0f5f"
   },
   {
     "url": "windows/wepe.html",
-    "revision": "98b92b1a2471836e217aa0e09aae0a86"
+    "revision": "47206128f61d5b41e9351052ac4584ba"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
