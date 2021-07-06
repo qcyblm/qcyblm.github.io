@@ -4,6 +4,10 @@ on:
     branches: [ baiduPush ]
   schedule:
     - cron: '0 15 * * *'
+  workflow_dispatch:
+    inputs:
+      name:
+        required: false
 jobs:
   build:
     runs-on: ubuntu-latest
