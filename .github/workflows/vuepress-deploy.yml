@@ -26,7 +26,7 @@ jobs:
       - name: Build VuePress
         run: yarn build
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@main
+        uses: JamesIves/github-pages-deploy-action@latest
         with:
           git-config-name: github-actions[bot]
           git-config-email: github-actions[bot]@users.noreply.github.com
