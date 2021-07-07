@@ -1,7 +1,9 @@
 name: baiduPush
 on:
   push:
-    branches: [ master, baiduPush ]
+    branches:
+     - master
+     - baiduPush
   schedule:
     - cron: '0 15 * * *'
   workflow_dispatch:
