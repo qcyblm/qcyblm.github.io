@@ -5,12 +5,7 @@ on:
      - master
      - baiduPush
   schedule:
-    - cron: '0 15 * * *'
-  workflow_dispatch:
-    inputs:
-      name:
-        description: manual triggered workflow
-        required: true
+    - cron: '0 13 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
