@@ -27,11 +27,11 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "a97f417a823d2332d754f0fe70e8e54a"
+    "revision": "65df9edc5dc4797f401c449fb5df4799"
   },
   {
     "url": "about.html",
-    "revision": "12eda45eb32e242938693d0ad99d7f41"
+    "revision": "1d43241721fc44b0367099b76a97fd33"
   },
   {
     "url": "assets/css/0.styles.6eb90780.css",
@@ -106,24 +106,24 @@ self.__precacheManifest = [
     "revision": "2bba5c995579f8084d7aff81a661b878"
   },
   {
-    "url": "assets/js/app.970777b9.js",
-    "revision": "ab6c326518b0a01d7606af9b75359b8b"
+    "url": "assets/js/app.f8a5c008.js",
+    "revision": "11c7ea8babe3d84a97de35f1393720b3"
   },
   {
     "url": "book/book1.html",
-    "revision": "47946172fcd0a8e7c956754105dd9932"
+    "revision": "16c260ee955c6ac897b75edf04513270"
   },
   {
     "url": "book/book2.html",
-    "revision": "37d820dfee29df6167ef5e2749dd167c"
+    "revision": "a5b523b8bca744376b6ffffd60608b87"
   },
   {
     "url": "book/index.html",
-    "revision": "51184e6ad437e124cbb5a3257bd5eed4"
+    "revision": "0cb9e62c646adc6eede1114807037ceb"
   },
   {
     "url": "friendlinks.html",
-    "revision": "700bd85182059b9fa1520df4971f02f8"
+    "revision": "f895c3239c178073505bad3594de976c"
   },
   {
     "url": "icons/apple-touch-icon-152x152.png",
@@ -139,27 +139,27 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "b340f478908b46fbded7430d5bc2dd2b"
+    "revision": "119509f868bf15dbddac53997eb9a2eb"
   },
   {
     "url": "nav.html",
-    "revision": "2155c83ae6916bc1c302476806bc9668"
+    "revision": "01feaf762d50a4fff3b6ff3afe1c5b2f"
   },
   {
     "url": "project.html",
-    "revision": "18f01c8e3144fff84131f054802a6dbf"
+    "revision": "49e68ba5fb9972248bf3276a57503eb3"
   },
   {
     "url": "support.html",
-    "revision": "783d23e504c176f5b8cf647988b6510a"
+    "revision": "e1c7928acd4b44d769cf9617970362b8"
   },
   {
     "url": "windows/software.html",
-    "revision": "5dfd1e95385b30886df4d99c1bf70fdc"
+    "revision": "e4c956b8afcd1a46a29d17d4eccafa66"
   },
   {
     "url": "windows/wepe.html",
-    "revision": "797f89ab7c910a8332837cd7f62a843b"
+    "revision": "e9ed269d02c6c92e09334babf1d07777"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
