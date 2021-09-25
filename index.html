@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="/vuepress/favicon.ico">
+    <title>青春永不落幕</title>
+</head>
+
+<body>
+    <div id=app>
+        <header>
+            <img :src="item.logo" alt="">
+            <h1>
+                {{ item.title }}
+            </h1>
+            <p>
+                {{ item.text }}
+            </p>
+        </header>
+        <nav>
+            <ul>
+                <li v-for="item in item.navbar"><a :href="item.link" :target="item.target">{{ item.text }}</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section v-for="item in item.label">
+                <h3> {{ item.title }} </h3>
+                <ul>
+                    <li v-for="item in item.children">
+                        <a :href="item.link" target="_blank" rel="noopener noreferrer">{{ item.text }}</a>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p v-html="item.footer"></p>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/vue@next" type="text/javascript"></script>
+    <script src="./js/main.js" type="module"></script>
+</body>
+
+</html>
