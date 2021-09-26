@@ -95,6 +95,11 @@ export default {
             text: "Legna",
             link: "https://www.brighost.com/",
             title: "让一切更简单"
+        },
+        {
+            text: "极客街社区",
+            link: "https://geekjie.com",
+            title: "开放的技术交流社区"
         }
     ]
 }

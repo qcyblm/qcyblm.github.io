@@ -6,8 +6,8 @@ const app = {
     data() {
         return {
             item: {
-                title: "青春永不落幕",
-                text: "个人学习HTML、CSS、JavaScript主页",
+                title: document.title,
+                text: document.getElementsByName('description')[0].content,
                 logo: "/vuepress/favicon.ico",
                 navbar,
                 label: [
