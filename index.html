@@ -2,49 +2,49 @@
 <html lang="zh-CN">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="个人学习HTML、CSS、JavaScript主页">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
-    <meta http-equiv="refresh" content="5; url=https://qcyblm.github.io/">
-    <script src="https://unpkg.com/vue@next" type="text/javascript"></script>
-    <script src="./js/main.js" type="module"></script>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="icon" href="/vuepress/favicon.ico">
-    <title>青春永不落幕</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="个人学习HTML、CSS、JavaScript主页">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta http-equiv="refresh" content="5; url=http://qcyblm.github.io/">
+  <script src="https://unpkg.com/vue@next" type="text/javascript"></script>
+  <script src="./js/main.js" type="module"></script>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="icon" href="/vuepress/favicon.ico">
+  <title>青春永不落幕</title>
 </head>
 
 <body>
-    <div id=app>
-        <header>
-            <img :src="item.logo" alt="">
-            <h1>
-                {{ item.title }}
-            </h1>
-            <p>
-                {{ item.text }}
-            </p>
-        </header>
-        <nav>
-            <ul>
-                <li v-for="item in item.navbar"><a :href="item.link" :target="item.target">{{ item.text }}</a></li>
-            </ul>
-        </nav>
-        <main>
-            <section v-for="item in item.label">
-                <h3> {{ item.title }} </h3>
-                <ul>
-                    <li v-for="item in item.children">
-                        <a :href="item.link" target="_blank" :title="item.title" rel="noopener noreferrer">{{ item.text }}</a>
-                    </li>
-                </ul>
-            </section>
-        </main>
-        <footer>
-            <p v-html="item.footer"></p>
-        </footer>
-    </div>
+  <div id=app>
+    <header>
+      <img :src="item.logo" alt="">
+      <h1>
+        {{ item.title }}
+      </h1>
+      <p>
+        {{ item.text }}
+      </p>
+    </header>
+    <nav>
+      <ul>
+        <li v-for="item in item.navbar"><a :href="item.link" :target="item.target">{{ item.text }}</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section v-for="item in item.label">
+        <h3> {{ item.title }} </h3>
+        <ul>
+          <li v-for="item in item.children">
+            <a :href="item.link" target="_blank" :title="item.title" rel="noopener noreferrer">{{ item.text }}</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p v-html="item.footer"></p>
+    </footer>
+  </div>
 </body>
 
 </html>

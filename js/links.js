@@ -100,6 +100,11 @@ export default {
             text: "极客街社区",
             link: "https://geekjie.com",
             title: "开放的技术交流社区"
+        },
+        {
+          text: "⋛⊱ʚ前端小行星ɞ⊰⋚",
+          link: "http://www.hph.fan/",
+          title: ""
         }
     ]
 }
