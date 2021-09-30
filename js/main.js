@@ -1,6 +1,8 @@
 import navbar from "./navbar.js";
 import website from "./website.js";
 import links from "./links.js";
+var title = document.title;
+var text = document.getElementsByName('description')[0].content;
 var currentYear = new Date().getFullYear();
 var icons = document.getElementsByTagName('head')[0].getElementsByTagName('link');
 var favicon = "/favicon.ico";
@@ -13,8 +15,8 @@ const app = {
   data() {
     return {
       item: {
-        title: document.title,
-        text: document.getElementsByName('description')[0].content,
+        title,
+        text,
         logo: favicon,
         navbar,
         label: [
