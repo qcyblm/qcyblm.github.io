@@ -1,9 +1,6 @@
 import navbar from "./navbar.js";
 import website from "./website.js";
 import links from "./links.js";
-var headHTML = document.getElementsByTagName('head')[0].innerHTML;
-headHTML += '<meta itemprop="image" content="' + window.location.origin + '/vuepress/favicon.ico">'
-document.getElementsByTagName('head')[0].innerHTML = headHTML;
 var title = document.title;
 var text = document.getElementsByName('description')[0].content;
 var currentYear = new Date().getFullYear();
