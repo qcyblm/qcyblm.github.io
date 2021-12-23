@@ -110,5 +110,10 @@ export default {
       link: 'http://wmiso.com/',
       icon: 'http://wmiso.com/favicon.ico',
     },
+    {
+      text: '小胖墩er',
+      link: 'https://chubbyduner.top',
+      icon: 'https://chubbyduner.top/img/fav.png',
+    }
   ],
 }

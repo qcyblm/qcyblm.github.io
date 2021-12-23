@@ -9,8 +9,8 @@
   <meta itemprop="image" content="https://qcyblm.gitee.io/vuepress/favicon.ico, https://qcyblm.github.io/vuepress/favicon.ico" />
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" CONTENT="Wed, 26 Feb 1997 08:21:57 GMT"> 
   <meta http-equiv="Expires" content="0" />
-  <meta http-equiv="refresh" content="5">
   <script src="https://unpkg.com/vue@next" type="text/javascript"></script>
   <script src="./js/main.js" type="module"></script>
   <link rel="stylesheet" href="./css/styles.css">
@@ -19,17 +19,17 @@
 </head>
 
 <body>
-  <div id=app>
+  <div id="app" v-cloak>
     <header>
-      <img :src="item.logo" alt="">
-      <h1>
+      <img v-if="item.logo" :src="item.logo" alt="">
+      <h1 v-if="item.title">
         {{ item.title }}
       </h1>
-      <p>
+      <p v-if="item.text">
         {{ item.text }}
       </p>
     </header>
-    <nav>
+    <nav v-if="item.navbar">
       <ul>
         <li v-for="item in item.navbar"><a :href="item.link" :target="item.target">{{ item.text }}</a></li>
       </ul>
@@ -46,7 +46,7 @@
         </ul>
       </section>
     </main>
-    <footer>
+    <footer v-if="item.footer">
       <p v-html="item.footer"></p>
     </footer>
   </div>

@@ -11,6 +11,10 @@ body {
   background-color: #DEE1E6;
 }
 
+[v-cloak] {
+  display: none;
+}
+
 a {
   color: #5fa3dd;
   text-decoration: none;
