@@ -29,7 +29,7 @@ const app = {
         }
       }
       this.item.logo = favicon
-      this.footer = `&copy; 2020-${currentYear} <a href='/'>qcyblm</a>`
+      this.item.footer = `&copy; 2020-${currentYear} <a href='/'>qcyblm</a>`
     })
   }
 }
